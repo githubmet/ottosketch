@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="3"
+        android:gravity="center"
+        android:background="#FFBB00"
+        android:text="hello from fragment one"
+        android:textColor="#000"
+        android:id="@+id/textViewFragmentOneP001"/>
+
+</RelativeLayout>

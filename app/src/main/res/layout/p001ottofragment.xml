@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextOttoFragmentP001"/>
+    <Button
+        android:layout_below="@+id/editTextOttoFragmentP001"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Send this data to Bus"
+        android:id="@+id/buttonOttoFragmentP001"/>
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.example.incir.myapplication.fragment.P001FragmentOne"
+        android:id="@+id/fragmentOneP001"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        tools:layout="@layout/p001fragmentone" />
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.example.incir.myapplication.fragment.P001FragmentTwo"
+        android:id="@+id/fragmentTwoP001"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:layout="@layout/p001fragmenttwo" />
+
+
+</RelativeLayout>

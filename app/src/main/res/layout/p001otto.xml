@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <fragment
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:name="com.example.incir.myapplication.fragment.P001FragmentOtto"
+        android:id="@+id/fragmentOttoP001"
+
+        tools:layout="@layout/p001fragmentotto" />
+
+
+</RelativeLayout>
