@@ -6,6 +6,8 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.incir.myapplication.backbone.P001EventBusClass;
@@ -14,8 +16,9 @@ import com.example.incir.myapplication.R;
 
 import com.squareup.otto.Subscribe;
 
-public class P001FragmentTwo extends Fragment {
+public class P001FragmentTwo extends Fragment implements View.OnClickListener{
     TextView textViewFragmentTwoP001;
+    EditText editTextFragmentTwoP001;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -26,6 +29,9 @@ public class P001FragmentTwo extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         textViewFragmentTwoP001= (TextView) getActivity().findViewById(R.id.textViewFragmentTwoP001);
+        editTextFragmentTwoP001= (EditText)getActivity().findViewById(R.id.editTextFragmentTwoP001);
+        Button buttonFragmentTwoP001= (Button)getActivity().findViewById(R.id.buttonFragmentTwoP001);
+        buttonFragmentTwoP001.setOnClickListener(this);
     }
 
     @Override
@@ -46,4 +52,8 @@ public class P001FragmentTwo extends Fragment {
         textViewFragmentTwoP001.setText(data);
     }
 
+    @Override
+    public void onClick(View v) {
+        P001EventBusClass.getBus().post(new P001MessageEventClass(editTextFragmentTwoP001.getText().toString()));
+    }
 }

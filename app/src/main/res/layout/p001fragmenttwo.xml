@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#00FFBB">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minLines="3"
         android:gravity="center"
-        android:background="#00FFBB"
         android:text="hello from fragment two"
         android:textColor="#000"
         android:id="@+id/textViewFragmentTwoP001"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextFragmentTwoP001"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FragmentTwo Button"
+        android:id="@+id/buttonFragmentTwoP001"/>
 
-</RelativeLayout>
+</LinearLayout>
