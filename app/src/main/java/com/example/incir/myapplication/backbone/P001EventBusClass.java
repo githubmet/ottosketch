@@ -9,3 +9,6 @@ public class P001EventBusClass {
         return bus;
     }
 }
+
+//Bus bus=new Bus();
+//Bus bus=new Bus(ThreadEnforcer.MAIN);  bu ikiside ayni

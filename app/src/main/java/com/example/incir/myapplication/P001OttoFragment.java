@@ -29,5 +29,6 @@ public class P001OttoFragment extends Activity implements View.OnClickListener {
         String data=editTextOttoFragmentP001.getText().toString();
 
         P001EventBusClass.getBus().post(new P001MessageEventClass(data));
+
     }
 }

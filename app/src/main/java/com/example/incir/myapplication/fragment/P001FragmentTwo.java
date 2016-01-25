@@ -38,6 +38,7 @@ public class P001FragmentTwo extends Fragment {
     public void onPause() {
         super.onPause();
         P001EventBusClass.getBus().unregister(this);
+
     }
     @Subscribe
     public void getDataFromBus(P001MessageEventClass p001MessageEventClass){  //must be public and void  Event a java class

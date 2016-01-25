@@ -12,7 +12,7 @@
         android:layout_below="@+id/editTextOttoFragmentP001"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="Send this data to Bus"
+        android:text="Send this data to Fragments by Bus"
         android:id="@+id/buttonOttoFragmentP001"/>
 
     <fragment
