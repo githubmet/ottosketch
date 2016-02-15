@@ -3,6 +3,7 @@
 
     <string-array name="activity_Names">
         <item>P001OttoFragment</item>
+        <item>P002OttoReview</item>
         <item>P003</item>
         <item>P004</item>
         <item>P005</item>

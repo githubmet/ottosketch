@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b0c4de">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello from activity"
+        android:minLines="3"
+        android:gravity="center"
+        android:id="@+id/textViewOttoReviewP002"/>
+
+    <Button
+        android:layout_below="@+id/textViewOttoReviewP002"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Activity Button"
+        android:id="@+id/buttonOttoReviewP002" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.incir.myapplication.fragment.P002FragmentTop"
+        android:id="@+id/fragmentTopP002"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        tools:layout="@layout/p002fragmenttop" />
+
+</RelativeLayout>

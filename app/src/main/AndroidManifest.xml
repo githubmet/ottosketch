@@ -21,6 +21,8 @@
 
         <activity android:name=".P001OttoFragment"></activity>
 
+        <activity android:name=".P002OttoReview"></activity>
+
     </application>
 
 </manifest>
